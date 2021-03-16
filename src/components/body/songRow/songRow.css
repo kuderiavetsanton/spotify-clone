@@ -1,0 +1,47 @@
+.songRow{
+    margin-left: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color:rgb(212, 212, 212);
+    justify-content: space-between;
+    justify-items: start;
+    border-radius: 4px;
+}
+.songRow__left{
+    display: flex;
+    align-items: center;
+    flex: 0.85;
+}
+.songRow__left > img{
+    width: 50px;
+    height: 50px;
+}
+.songRow:hover{
+    cursor: pointer;
+    background-color: rgba(97, 96, 96, 0.486);
+}
+.songRow__info{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.songRow.active{
+    background-color: rgb(124, 124, 124);
+    color: white;
+}
+.songRow.active .songRow__info > h1{
+    color: rgb(3, 235, 3);
+}
+.songRow__info > h1{
+    font-size: 1rem;
+}
+.songRow__order{
+    font-size: 1.4rem;
+    margin-right: 15px;
+}
+
+.songRow__album{
+    flex: 0.4;
+}

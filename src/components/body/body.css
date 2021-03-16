@@ -1,0 +1,98 @@
+.body{
+    padding: 30px;
+    flex: .85;
+    color: white;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 1));
+    background-color: rgb(91, 87, 115);
+    overflow-y: overlay;
+    overflow: scroll;
+    height: 100vh;
+    scrollbar-width: none;
+}
+
+.body__info{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+.body__info > img{
+    height: 25vh;
+    margin: 0 20px;
+    box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.5);
+}
+.body__infoText{
+    flex:1;
+}
+.body__infoText > h2{
+    font-size:6.5rem;
+    margin-bottom: 10px;
+}
+.body__infoText >p{
+    color: rgb(204, 204, 204);
+    font-size:14px;
+}
+.body__icons{
+    display: flex;
+    align-items: center;
+}
+.body__icons > .MuiSvgIcon-root{
+    margin-right: 20px;
+}
+.body__start{
+    font-size:70px!important;
+    color: rgb(13, 196, 95);
+    cursor: pointer;
+    z-index: 10;
+    transition: .1s ease-out!important;
+}
+.body__start:hover{
+    transform: scale(1.1);
+}
+.filled-white{
+    position: relative;
+    display: flex;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+.filled-white:before{
+    z-index: 1;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+}
+.body__icon{
+    color: rgb(201, 201, 201);
+    transition: .3s!important;
+}
+.body__icon:hover{
+    color: rgb(255, 255, 255);
+}
+
+.body__songs{
+    margin: 20px;
+}
+.body__columns{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: .9rem;
+    color: rgb(190, 190, 190);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.column__track{
+    flex:.4;
+    margin-left: 20px;
+    
+}
+.body hr{
+    margin-left: 28px;
+    width: 98%;
+    border-top: 1px solid rgba(128, 128, 128, 0.534);
+    margin-bottom: 10px;
+    margin-top: 5px;
+}

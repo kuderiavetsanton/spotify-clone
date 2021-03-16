@@ -1,0 +1,94 @@
+.footer{
+    background-color: #fff;
+    width: 99%;
+    margin: 0 auto;
+    background-color: #282828;
+    color: whitesmoke;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__left{
+    flex: .3;
+    display: flex;
+    align-items: center;
+}
+.footer__right{
+    flex: .3;
+    display: flex;
+    align-items: center;
+}
+.footer .footer__center{
+    flex: .4;
+    padding: 0 100px;
+    display: flex;
+    max-width: 500px;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(211, 211, 211);
+}
+.footer .active .footer__green{
+    color: rgb(17, 184, 26);
+    position: relative;
+    overflow: visible;
+}
+.footer .active{
+    position: relative;
+    display: flex;
+    justify-content: center ;
+}
+.footer .active::after{
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color:rgb(17, 184, 26);
+    position: absolute;
+    bottom: -5px;
+    z-index: 10000;
+}
+.footer__green,
+    .footer__icon{
+        transform: scale(1);
+    }
+.footer .active .footer__green:hover{
+    color: rgb(53, 255, 46)!important;
+    transition: .2s ease-in-out;
+    transform: scale(1.1);
+}
+.footer__green:hover,
+    .footer__icon:hover{
+    color: rgb(255, 255, 255);
+    transition: .2s ease-in-out;
+    transform: scale(1.1);
+}
+.footer__albumLogo{
+    width: 60px;
+    height: 60px;
+}
+
+.footer__songName{
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+.footer__authorName{
+    font-size:0.9rem;
+    color: grey;
+    text-transform: capitalize;
+}
+.footer__songInfo{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__right * .MuiSlider-root{
+    color: rgb(29, 192, 83);
+}
+.pointers{
+    cursor: pointer;
+}

@@ -1,0 +1,35 @@
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.header__left{
+    flex: .6;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    padding: 10px;
+    color: grey;
+    align-items: center;
+    border-radius: 99px;
+    min-width: 100px;
+    max-width: 350px;
+}
+.header__left > input{
+    background-color: rgb(243, 243, 243);
+    padding: 0 10px ;
+    border:none;
+    width: calc(100% - 20px);
+    font-size:1.1rem;
+    color: grey;
+}
+.header__right{
+    display: flex;
+    align-items: center;
+}
+.header__right > p{
+    margin-left: 15px;
+    font-size: 1.1rem;
+    color: white;
+}
